@@ -1,6 +1,8 @@
 # DRT
 
-A vibe-coded app can grow one good idea at a time until a small fix breaks something you thought was settled. DRT gives your coding agent an opinionated set of rules for working in that repository. The agent takes inventory of what the app does, records why people rely on it, and uses that record when fixing bugs or adding features.
+DRT helps a coding agent learn enough about an existing application to fix a bug or add a feature while preserving the choices people already rely on. You can use it on an unfamiliar library, a mature service, or an app you built one prompt at a time.
+
+Start with the change you want. The agent traces the affected behavior through the code, looks for similar features, and checks tests, documentation, and past decisions to understand why the app works the way it does. It follows established patterns where they still fit and flags choices the evidence leaves open. You can use these rules for one change or install them in the repository so future agents can build on what you learn.
 
 ## Start from your coding agent
 
@@ -10,7 +12,7 @@ Open your app’s repository in your coding agent. Tell it, “Get a separate ch
 | --- | --- | --- |
 | **Help choosing what to work on** (outer loop) | The agent uses DRT from outside your app. It can compare issues, trace related symptoms, and propose a change small enough to test. You can use it for one repair without installing rules. | “Use DRT to look at the open issues and the code they touch. Which fix would help users most? Show me the evidence and a way to test it before we choose.” |
 | **Consistent rules for future changes** (inner loop) | The agent installs operating instructions, decisions, and checks in your app’s repository so later sessions know what behavior to preserve and how to verify a change. | “Install the DRT inner loop. Trace our main user journeys, record the promises people rely on, and run the checks in this repo.” |
-| **A map of an app that’s become hard to follow** (full inner loop) | The agent installs the same rules and also builds a dependency graph and a written model of the app’s intent. Future sessions can trace a proposed change through related features and revisit why they behave as they do. | “Install the full DRT inner loop. Inventory the app, map how its parts depend on each other, and show me where you found evidence for its intent and where you need my judgment.” |
+| **A lasting map of how the app works and why** (full inner loop) | The agent installs the same rules and also builds a dependency graph and a written model of the app’s intent. Future sessions can trace a proposed change through related features and revisit why they behave as they do. | “Install the full DRT inner loop. Inventory the app, map how its parts depend on each other, and show me where you found evidence for its intent and where you need my judgment.” |
 
 You can start with the outer loop while deciding what deserves attention and install either inner loop when you want future agents to carry that understanding forward.
 
@@ -20,10 +22,10 @@ The agent prepares a kit for your particular app. It identifies the behavior peo
 
 ## Make the next change
 
-Say a notes app saves drafts when you close the editor. You ask for a Discard button. Both actions close the editor, but only one should erase the draft. An inventory can point the agent to the shared code. The intent record explains why someone closing the window expects their work to be there tomorrow.
+Consider adding column renaming to a reporting tool. Changing the heading looks right on screen, but a saved sort may still point to the old name. The agent needs to learn how the tool identifies columns, which settings follow a column, and how similar operations handle saved preferences. That tells it what to implement and what to test.
 
-Once the rules are installed, a request can be as simple as:
+> Add column renaming. Follow the existing conventions for changing a report. Show me what happens when I rename a column that already has sorting and formatting set, then save and reopen the report. Record any compatibility decision a future maintainer will need.
 
-> Add a Discard button to the editor. Follow this repo’s operating rules. Check what happens when I discard a draft and when I just close the window, then reopen the note. Update the inventory with anything you learn.
+The same approach applies to a bug fix. If an export drops tabs from a value, check how the exporter handles a custom formatter before changing how it writes the file. A regression test can check both that the tab survives and that the user's formatting choice still applies.
 
-That gives the next agent a concrete behavior to preserve, a way to check it, and a place to find the reason behind it. For the installation details, see the [agent handoff guide](harness/handoff/README.md).
+For the installation details, see the [agent handoff guide](harness/handoff/README.md).
