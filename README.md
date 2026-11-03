@@ -4,11 +4,15 @@ A vibe-coded app can grow one good idea at a time until a small fix breaks somet
 
 ## Start from your coding agent
 
-Open your app’s repository in your coding agent. Give it access to this repository too. If your agent can use Git, you can paste this request directly into the chat:
+Open your app’s repository in your coding agent. Tell it, “Get a separate checkout of https://github.com/kbthree/DRT.git and read its AGENTS.md and harness/handoff/README.md.” Then pick the request below that fits what you want today.
 
-> Get a separate checkout of https://github.com/kbthree/DRT.git and read its AGENTS.md and harness/handoff/README.md. Use DRT to install repository operating rules in my app. Start by showing me what people can do with the app today. Trace those activities to the code and tests that support them. Record what you know about why each behavior matters, what you inferred, and what you still need to ask me. Prepare the installation from that evidence, run the checks in my app, and show me where the rules and inventory live.
+| What you want | How DRT helps | What to ask your agent |
+| --- | --- | --- |
+| **Help choosing what to work on** (outer loop) | The agent uses DRT from outside your app. It can compare issues, trace related symptoms, and propose a change small enough to test. You can use it for one repair without installing rules. | “Use DRT to look at the open issues and the code they touch. Which fix would help users most? Show me the evidence and a way to test it before we choose.” |
+| **Consistent rules for future changes** (inner loop) | The agent installs operating instructions, decisions, and checks in your app’s repository so later sessions know what behavior to preserve and how to verify a change. | “Install the DRT inner loop. Trace our main user journeys, record the promises people rely on, and run the checks in this repo.” |
+| **A map of an app that’s become hard to follow** (full inner loop) | The agent installs the same rules and also builds a dependency graph and a written model of the app’s intent. Future sessions can trace a proposed change through related features and revisit why they behave as they do. | “Install the full DRT inner loop. Inventory the app, map how its parts depend on each other, and show me where you found evidence for its intent and where you need my judgment.” |
 
-You can start smaller if you have a bug to fix today. Ask your agent to **use DRT for this change only** and describe what went wrong. The guide calls that “outer-only.” Installing the rules for future sessions is called “install-inner.” Your agent can handle the commands for either choice.
+You can start with the outer loop while deciding what deserves attention and install either inner loop when you want future agents to carry that understanding forward.
 
 ## What gets installed
 
