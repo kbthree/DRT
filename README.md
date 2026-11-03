@@ -16,6 +16,14 @@ Open your app’s repository in your coding agent. Tell it, “Get a separate ch
 
 You can start with the outer loop while deciding what deserves attention and install either inner loop when you want future agents to carry that understanding forward.
 
+## When new features keep breaking old ones
+
+If your vibe-coded app grew faster than its tests, start with a feature that has broken twice. In a notes app, for example, closing the editor might save a draft. Adding a Discard button could accidentally make both actions erase it because they share the same code.
+
+Ask your agent to install the full inner loop. As part of the installation, it can build a **semantic graph** linking each action to what the user expects and the code responsible, then add regression tests to the app’s regular checks. In this example, one test closes the editor and reopens the draft. Another discards the draft and checks that it stays gone. The graph tells a future agent why both paths matter. Running both tests before accepting a change catches a broken promise while there is still time to fix it.
+
+> Install the full inner loop in this app. Start with our recurring regressions. Map the affected features and the behavior each should preserve, add tests that reproduce the old failures, and include them in the checks we run for each new feature.
+
 ## What gets installed
 
 The agent prepares a kit for your particular app. It identifies the behavior people depend on, records decisions and open questions, and selects checks that exercise those behaviors. The installer adds instructions to the app’s AGENTS.md and keeps its maintenance records under maintenance/. For a full inventory, ask the agent to include a dependency graph showing how the pieces connect and a written account of the app’s intent. The agent builds these from its investigation. You can correct its interpretation before it becomes a rule.
