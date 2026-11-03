@@ -1,0 +1,270 @@
+{
+  "version": 1,
+  "purpose": "Improve the factory through the same decision-to-obligation-to-evidence-and-repair process it applies to each product.",
+  "decisions": [
+    {
+      "id": "HD-REFLEXIVE",
+      "authority": "user",
+      "status": "active",
+      "text": "The outer loop around the repository must work like the inner loop: a turtle inside a turtle."
+    },
+    {
+      "id": "HD-TRACE",
+      "authority": "derived harness policy",
+      "status": "active",
+      "from": [
+        "HD-REFLEXIVE"
+      ],
+      "text": "Every transferable claim retains type, scope, authority, evidence and revision conditions."
+    },
+    {
+      "id": "HD-CONTINUITY",
+      "authority": "user v22 decision",
+      "status": "active",
+      "from": [
+        "HD-REFLEXIVE"
+      ],
+      "text": "Cross-repository memory preserves corrections, unresolved tensions and the next action using the selected v22 method."
+    },
+    {
+      "id": "HD-EXPERIMENT",
+      "authority": "user comparative experiment instruction",
+      "status": "active",
+      "from": [
+        "HD-REFLEXIVE"
+      ],
+      "text": "Compare the same frozen task and evidence boundary, preserve submissions and results, and distinguish measured outcomes from general hypotheses."
+    },
+    {
+      "id": "HD-REPAIR",
+      "authority": "user grounding and outward/back principles",
+      "status": "active",
+      "from": [
+        "HD-REFLEXIVE"
+      ],
+      "text": "Failures and dissonances can implicate product code, tests, interpretations or harness rules; return evidence to the responsible decision and revalidate."
+    },
+    {
+      "id": "HD-ADAPTIVE",
+      "authority": "user",
+      "status": "active",
+      "from": [
+        "HD-REFLEXIVE"
+      ],
+      "text": "Either loop accepts different subjects and adjusts its organization to size, coupling, uncertainty and demonstrated demands."
+    },
+    {
+      "id": "HD-REPAIR-PROVENANCE",
+      "authority": "assistant implementation of HD-REPAIR from evaluator evidence",
+      "status": "active",
+      "from": [
+        "HD-REPAIR",
+        "HD-EXPERIMENT"
+      ],
+      "text": "Retain immutable experiment inputs and explicit amendment chains for justified evaluator repairs; audit all registered trials."
+    },
+    {
+      "id": "HD-SEARCH",
+      "authority": "User persistence/value-judgment instruction and conditional Terra/Astra suggestion",
+      "status": "active",
+      "from": [
+        "HD-ADAPTIVE",
+        "HD-REPAIR"
+      ],
+      "text": "Persist through evidence-producing probes and repair the implicated understanding. Model choice is revisable: bounded concrete probes may use Terra, unresolved constraint synthesis may use Astra max. Preserve initial comparisons and judge stopping explicitly without claiming an elegant answer is guaranteed."
+    },
+    {
+      "id": "HD-EXECUTION-CONTEXT",
+      "authority": "Assistant repair under user adaptive/reflexive direction",
+      "status": "active",
+      "from": [
+        "HD-ADAPTIVE",
+        "HD-REPAIR"
+      ],
+      "text": "Coding/review context packets declare pinned runtime, source root, import verification and executed evidence. Preserve packet fingerprints and source lineage; validate records through a subject-neutral registry."
+    },
+    {
+      "id": "HD-FAILURE-REACHABILITY",
+      "authority": "Parent refinement under user reflexive/adaptive direction",
+      "status": "active",
+      "from": [
+        "HD-REPAIR",
+        "HD-ADAPTIVE"
+      ],
+      "text": "For declared failure boundaries, carry a reachable prerequisite, operation, expected failure and preserved state into verification. Validate recorded proposals without deriving extra agents from the count of failure cases."
+    },
+    {
+      "id": "HD-LESSON-APPLICATION",
+      "authority": "User asks about transferable patterns and whether a lesson agent catches nonapplication; parent operational refinement",
+      "status": "active",
+      "from": [
+        "HD-CONTINUITY",
+        "HD-REPAIR",
+        "HD-ADAPTIVE"
+      ],
+      "text": "Selected lessons need explicit target applicability, local policy, exclusions and expected evidence. Audit application separately from memory recovery; retain missed-and-repaired or unexercised outcomes. Current parent owns this role."
+    },
+    {
+      "id": "HD-HANDOFF-MODE",
+      "authority": "User chooses whether the outer harness installs an inner loop. Default and file-preservation behavior are implementation policy.",
+      "status": "active",
+      "from": ["HD-REFLEXIVE", "HD-ADAPTIVE"],
+      "text": "In either mode the outer harness recovers product purpose, decisions, constraints and evidence, uses them to do the work and retains scoped lessons. Explicit install-inner additionally places the product-specific knowledge and the applicable outer operating rules inside the product, discoverable from the checkout and usable with native checks. Subsequent outer-only engagements preserve existing product instructions and checks."
+    },
+    {
+      "id": "HD-RECONSTRUCTION-PARITY",
+      "authority": "User definition of parity and scope of reconstruction",
+      "status": "active",
+      "from": ["HD-HANDOFF-MODE", "HD-ADAPTIVE"],
+      "text": "Assess working features, verified fixes, a full issue and feature inventory, and maintainable organization independently. Both loops must be able to improve modules, configuration and reuse, and to finish, retain, archive or remove partial and unused material on the strength of consumer and compatibility evidence."
+    }
+  ],
+  "obligations": [
+    {
+      "id": "HO-CLAIMS",
+      "decision": "HD-TRACE",
+      "rule": "Claims are typed, scoped, sourced and revisable.",
+      "check": "claims"
+    },
+    {
+      "id": "HO-MEMORY",
+      "decision": "HD-CONTINUITY",
+      "rule": "The selected prompt and cross-repository continuation preserve source linkage and synchrony.",
+      "check": "memory"
+    },
+    {
+      "id": "HO-COMPARISON",
+      "decision": "HD-EXPERIMENT",
+      "rule": "Frozen task/evaluator and actual candidate receipts remain consistent, regardless of whether candidates succeed.",
+      "check": "experiment"
+    },
+    {
+      "id": "HO-RETURN",
+      "decision": "HD-REPAIR",
+      "rule": "Experimental findings return to harness claims and an explicit next action.",
+      "check": "learning"
+    },
+    {
+      "id": "HO-ENFORCE",
+      "decision": "HD-REFLEXIVE",
+      "rule": "The outer gate rejects absent, failed or stale evidence just like the inner gate.",
+      "check": "enforcement"
+    },
+    {
+      "id": "HO-SUBJECTS",
+      "decision": "HD-ADAPTIVE",
+      "rule": "Different products and the harness use a common subject interface with explicit adapters.",
+      "check": "claims"
+    },
+    {
+      "id": "HO-AMENDMENTS",
+      "decision": "HD-REPAIR-PROVENANCE",
+      "rule": "Evaluator amendments retain the preceding artifact, reason, scope and authority and bind receipts to the current hash.",
+      "check": "experiment"
+    },
+    {
+      "id": "HO-SEARCH",
+      "decision": "HD-SEARCH",
+      "rule": "Recorded search recommendations identify unresolved evidence, discriminating questions or an explicit scoped stopping judgment; extra model work remains separately accounted.",
+      "check": "learning"
+    },
+    {
+      "id": "HO-CONTEXT",
+      "decision": "HD-EXECUTION-CONTEXT",
+      "rule": "Registered packets retain authority and current bound context, including execution identity; evidence registries remain auditable across subjects.",
+      "check": "learning"
+    },
+    {
+      "id": "HO-FAILURE-REACHABILITY",
+      "decision": "HD-FAILURE-REACHABILITY",
+      "rule": "Registered failure-boundary allocations must reproduce from complete grounded conditions; preserve evidence and scope.",
+      "check": "learning"
+    },
+    {
+      "id": "HO-LESSON-APPLICATION",
+      "decision": "HD-LESSON-APPLICATION",
+      "rule": "Registered lesson plans/audits bind known claims, local policies and complete evidence-backed dispositions; memory agreement is not an application status.",
+      "check": "learning"
+    },
+    {
+      "id": "HO-HANDOFF-MODE",
+      "decision": "HD-HANDOFF-MODE",
+      "rule": "Keep source-bound evidence for default and explicit outer-only, opt-in installation, and product-local acceptance and rejection with the outer harness unavailable to the verifier.",
+      "check": "learning"
+    },
+    {
+      "id": "HO-RECONSTRUCTION-PARITY",
+      "decision": "HD-RECONSTRUCTION-PARITY",
+      "rule": "Retain evidence and coverage gaps for working features, repairs, the issue and request inventory, and maintainable organization when assessing reconstruction parity.",
+      "check": "learning"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "HT-CLAIMS",
+      "dependsOn": [],
+      "role": "harness investigator",
+      "decision": "HD-TRACE",
+      "produces": [
+        "HO-CLAIMS",
+        "HO-SUBJECTS"
+      ],
+      "authority": "Extract and propose scoped claims with provenance."
+    },
+    {
+      "id": "HT-MEMORY",
+      "dependsOn": [
+        "HT-CLAIMS"
+      ],
+      "role": "continuity maintainer",
+      "decision": "HD-CONTINUITY",
+      "produces": [
+        "HO-MEMORY"
+      ],
+      "authority": "Reconcile cross-repository state without inventing evidence."
+    },
+    {
+      "id": "HT-EVALUATE",
+      "dependsOn": [],
+      "role": "experiment verifier",
+      "decision": "HD-EXPERIMENT",
+      "produces": [
+        "HO-COMPARISON",
+        "HO-AMENDMENTS"
+      ],
+      "authority": "Verify frozen inputs, submitted artifacts and reported outcomes."
+    },
+    {
+      "id": "HT-LEARN",
+      "dependsOn": [
+        "HT-MEMORY",
+        "HT-EVALUATE"
+      ],
+      "role": "harness integrator",
+      "decision": "HD-REPAIR",
+      "produces": [
+        "HO-RETURN",
+        "HO-SEARCH",
+        "HO-CONTEXT",
+        "HO-FAILURE-REACHABILITY",
+        "HO-LESSON-APPLICATION",
+        "HO-HANDOFF-MODE",
+        "HO-RECONSTRUCTION-PARITY"
+      ],
+      "authority": "Revise affected harness claims while retaining contrary evidence and limits."
+    },
+    {
+      "id": "HT-GATE",
+      "dependsOn": [
+        "HT-LEARN"
+      ],
+      "role": "deterministic verifier",
+      "decision": "HD-REFLEXIVE",
+      "produces": [
+        "HO-ENFORCE"
+      ],
+      "authority": "Execute the same evidence gate used by the product toy."
+    }
+  ],
+  "boundary": "This local gate enforces declared checks, not the truth of every claim, operating-system isolation or hosted merge controls. Its engine remains a small explicit trusted mechanism, open to tests and revision."
+}

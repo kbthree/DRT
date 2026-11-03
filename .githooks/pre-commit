@@ -1,0 +1,2 @@
+#!/bin/sh
+exec node harness/git-guard.mjs verify --delivery

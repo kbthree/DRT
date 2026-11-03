@@ -1,0 +1,397 @@
+{
+  "version": 1,
+  "purpose": "Preserve and revise the factory's understanding across repositories while keeping each product's purpose primary.",
+  "claims": [
+    {
+      "id": "HC-INNER-PARITY",
+      "kind": "hypothesis",
+      "status": "open",
+      "authority": "Working proposition requiring evidence for each application",
+      "statement": "A sufficiently grounded inner loop can let a fresh capable agent match the outer harness in preserving working features, fixing problematic behavior, maintaining a full traceable list of deeper issues and feature requests, and reorganizing code and configuration for continued maintenance.",
+      "scope": "General working question; applicability depends on evidence from the target.",
+      "evidence": [
+        "harness/handoff/README.md"
+      ],
+      "revision": "Test on the target; revise or reject when a counterexample or new evidence warrants it."
+    },
+    {
+      "id": "HC-SUPPORTABLE-GROWTH",
+      "kind": "hypothesis",
+      "status": "open",
+      "authority": "Working proposition requiring evidence for each application",
+      "statement": "As features accumulate, later changes become harder to make coherently when maintainers must rediscover which decisions govern the behavior and which other features depend on them. Making those relationships discoverable where changes are made should reduce repeated investigation and regressions on the next related feature.",
+      "scope": "General working question; applicability depends on evidence from the target.",
+      "evidence": [
+        "harness/decision-memory.md"
+      ],
+      "revision": "Test on the target; revise or reject when a counterexample or new evidence warrants it."
+    },
+    {
+      "id": "HC-OPTIONAL-HANDOFF",
+      "kind": "invariant",
+      "status": "active",
+      "authority": "Harness operating policy",
+      "statement": "Each engagement can use the outer harness alone or explicitly install a product-owned maintenance loop.",
+      "scope": "Harness workflow and explicitly adopted product obligations",
+      "evidence": [
+        "harness/engage.mjs"
+      ],
+      "revision": "Review if the governing product purpose or an explicit user decision changes."
+    },
+    {
+      "id": "HC-PURPOSE",
+      "kind": "invariant",
+      "status": "active",
+      "authority": "Harness operating policy",
+      "statement": "Harness mechanisms remain revisable in service of the grounded product purpose.",
+      "scope": "Harness workflow and explicitly adopted product obligations",
+      "evidence": [
+        "harness/core.md"
+      ],
+      "revision": "Review if the governing product purpose or an explicit user decision changes."
+    },
+    {
+      "id": "HC-PROVENANCE",
+      "kind": "invariant",
+      "status": "active",
+      "authority": "Harness operating policy",
+      "statement": "Distinguish observations, interpretations, decisions and proposals; preserve their sources and supersession.",
+      "scope": "Harness workflow and explicitly adopted product obligations",
+      "evidence": [
+        "harness/experiments.mjs"
+      ],
+      "revision": "Review if the governing product purpose or an explicit user decision changes."
+    },
+    {
+      "id": "HC-EVIDENCE",
+      "kind": "invariant",
+      "status": "active",
+      "authority": "Harness operating policy",
+      "statement": "Acceptance requires the declared checks to execute against the current artifact; model agreement is insufficient.",
+      "scope": "Harness workflow and explicitly adopted product obligations",
+      "evidence": [
+        "harness/gate.mjs"
+      ],
+      "revision": "Review if the governing product purpose or an explicit user decision changes."
+    },
+    {
+      "id": "HC-MEMORY",
+      "kind": "invariant",
+      "status": "active",
+      "authority": "Harness operating policy",
+      "statement": "Use the selected v22 method for continuation, retaining corrections, unresolved tensions and the next useful action.",
+      "scope": "Harness workflow and explicitly adopted product obligations",
+      "evidence": [
+        "harness/memory/intent.md"
+      ],
+      "revision": "Review if the governing product purpose or an explicit user decision changes."
+    },
+    {
+      "id": "HC-QUIRKS",
+      "kind": "heuristic",
+      "status": "provisional",
+      "authority": "Working proposition requiring evidence for each application",
+      "statement": "Characterize inherited quirks before fixing them; parity and desirability are separate decisions.",
+      "scope": "General working question; applicability depends on evidence from the target.",
+      "evidence": [
+        "harness/patterns.md"
+      ],
+      "revision": "Test on the target; revise or reject when a counterexample or new evidence warrants it."
+    },
+    {
+      "id": "HC-FOCUS",
+      "kind": "hypothesis",
+      "status": "open",
+      "authority": "Working proposition requiring evidence for each application",
+      "statement": "As simultaneous constraints and their interactions increase, focused lens passes or specialized contexts may improve fidelity even when information fits in one context.",
+      "scope": "General working question; applicability depends on evidence from the target.",
+      "evidence": [
+        "harness/attention.mjs"
+      ],
+      "revision": "Test on the target; revise or reject when a counterexample or new evidence warrants it."
+    },
+    {
+      "id": "HC-TWO",
+      "kind": "heuristic",
+      "status": "provisional",
+      "authority": "Working proposition requiring evidence for each application",
+      "statement": "A worker and a fresh verifier are a reasonable starting configuration for a consequential small change.",
+      "scope": "General working question; applicability depends on evidence from the target.",
+      "evidence": [
+        "harness/patterns.md"
+      ],
+      "revision": "Test on the target; revise or reject when a counterexample or new evidence warrants it."
+    },
+    {
+      "id": "HC-BOUNDARIES",
+      "kind": "heuristic",
+      "status": "provisional",
+      "authority": "Working proposition requiring evidence for each application",
+      "statement": "Give focused work the shared purpose and adjacent coupling contracts, and retain an owner for the integrated result.",
+      "scope": "General working question; applicability depends on evidence from the target.",
+      "evidence": [
+        "harness/patterns.md"
+      ],
+      "revision": "Test on the target; revise or reject when a counterexample or new evidence warrants it."
+    },
+    {
+      "id": "HC-TRANSFER",
+      "kind": "invariant",
+      "status": "active",
+      "authority": "Harness operating policy",
+      "statement": "A lesson transfers to a new repository as a scoped claim, not an automatically accepted product rule.",
+      "scope": "Harness workflow and explicitly adopted product obligations",
+      "evidence": [
+        "harness/patterns.md"
+      ],
+      "revision": "Review if the governing product purpose or an explicit user decision changes."
+    },
+    {
+      "id": "HC-REFLEXIVE",
+      "kind": "invariant",
+      "status": "active",
+      "authority": "Harness operating policy",
+      "statement": "The outer loop around the repository uses the same decision, rule, evidence and repair process as the inner loop.",
+      "scope": "Harness workflow and explicitly adopted product obligations",
+      "evidence": [
+        "harness/loop.mjs"
+      ],
+      "revision": "Review if the governing product purpose or an explicit user decision changes."
+    },
+    {
+      "id": "HC-ADAPTIVE",
+      "kind": "invariant",
+      "status": "active",
+      "authority": "Harness operating policy",
+      "statement": "Both loops accept different subjects and adjust their working structure to size and demands through a shared interface.",
+      "scope": "Harness workflow and explicitly adopted product obligations",
+      "evidence": [
+        "harness/loop.mjs"
+      ],
+      "revision": "Review if the governing product purpose or an explicit user decision changes."
+    },
+    {
+      "id": "HC-TEST-CONTRACTS",
+      "kind": "heuristic",
+      "status": "provisional",
+      "authority": "Working proposition requiring evidence for each application",
+      "statement": "Characterize callback receivers, return shapes, numerical behavior and test-host/fixture semantics before attributing a test failure to product code.",
+      "scope": "General working question; applicability depends on evidence from the target.",
+      "evidence": [
+        "harness/patterns.md"
+      ],
+      "revision": "Test on the target; revise or reject when a counterexample or new evidence warrants it."
+    },
+    {
+      "id": "HC-POLICY-STATE",
+      "kind": "heuristic",
+      "status": "provisional",
+      "authority": "Working proposition requiring evidence for each application",
+      "statement": "Separate durable intent from its current materialization; define absent, empty and future-input semantics before persisting state.",
+      "scope": "General working question; applicability depends on evidence from the target.",
+      "evidence": [
+        "harness/patterns.md"
+      ],
+      "revision": "Test on the target; revise or reject when a counterexample or new evidence warrants it."
+    },
+    {
+      "id": "HC-TRANSITIONS",
+      "kind": "heuristic",
+      "status": "provisional",
+      "authority": "Working proposition requiring evidence for each application",
+      "statement": "For stateful obligations, record initial state, event, expected effect and preserved meaning; execute sequences across changing inputs.",
+      "scope": "General working question; applicability depends on evidence from the target.",
+      "evidence": [
+        "harness/patterns.md"
+      ],
+      "revision": "Test on the target; revise or reject when a counterexample or new evidence warrants it."
+    },
+    {
+      "id": "HC-EVALUATOR-REPAIR",
+      "kind": "invariant",
+      "status": "active",
+      "authority": "Harness operating policy",
+      "statement": "Repair demonstrated evaluator defects through explicit amendment chains that preserve original inputs, predecessors, reasons and equal scoring conditions.",
+      "scope": "Harness workflow and explicitly adopted product obligations",
+      "evidence": [
+        "harness/experiments.mjs"
+      ],
+      "revision": "Review if the governing product purpose or an explicit user decision changes."
+    },
+    {
+      "id": "HC-ROLE",
+      "kind": "heuristic",
+      "status": "provisional",
+      "authority": "Working proposition requiring evidence for each application",
+      "statement": "Determine an object's semantic role before applying structural transformations; a callable container can be an opaque callable rather than owned configuration structure.",
+      "scope": "General working question; applicability depends on evidence from the target.",
+      "evidence": [
+        "harness/patterns.md"
+      ],
+      "revision": "Test on the target; revise or reject when a counterexample or new evidence warrants it."
+    },
+    {
+      "id": "HC-CONSTRUCTION-PHASE",
+      "kind": "heuristic",
+      "status": "provisional",
+      "authority": "Working proposition requiring evidence for each application",
+      "statement": "Validation appropriate for mutation of a complete owner may be invalid during reconstruction; preserve the phase boundary without disabling subsequent validation.",
+      "scope": "General working question; applicability depends on evidence from the target.",
+      "evidence": [
+        "harness/patterns.md"
+      ],
+      "revision": "Test on the target; revise or reject when a counterexample or new evidence warrants it."
+    },
+    {
+      "id": "HC-ASSOCIATION",
+      "kind": "heuristic",
+      "status": "provisional",
+      "authority": "Working proposition requiring evidence for each application",
+      "statement": "Carry associated data through transformations by occurrence or identity; equal values are insufficient to reconstruct a lost association.",
+      "scope": "General working question; applicability depends on evidence from the target.",
+      "evidence": [
+        "harness/patterns.md"
+      ],
+      "revision": "Test on the target; revise or reject when a counterexample or new evidence warrants it."
+    },
+    {
+      "id": "HC-SEARCH",
+      "kind": "heuristic",
+      "status": "provisional",
+      "authority": "Working proposition requiring evidence for each application",
+      "statement": "Allocate further research, probes and model effort to a named unresolved question with distinct predictions. Repair stagnant questions; stop a scoped batch only with acceptance evidence, no known untreated counterexample and an explicit value judgment.",
+      "scope": "General working question; applicability depends on evidence from the target.",
+      "evidence": [
+        "harness/search.mjs"
+      ],
+      "revision": "Test on the target; revise or reject when a counterexample or new evidence warrants it."
+    },
+    {
+      "id": "HC-SCHEMA-CLOSURE",
+      "kind": "heuristic",
+      "status": "provisional",
+      "authority": "Working proposition requiring evidence for each application",
+      "statement": "A schema transition should transform active state and latent references together, with explicit rules for surviving, retired and newly introduced identities.",
+      "scope": "General working question; applicability depends on evidence from the target.",
+      "evidence": [
+        "harness/patterns.md"
+      ],
+      "revision": "Test on the target; revise or reject when a counterexample or new evidence warrants it."
+    },
+    {
+      "id": "HC-ABSENCE-STATE",
+      "kind": "heuristic",
+      "status": "provisional",
+      "authority": "Working proposition requiring evidence for each application",
+      "statement": "Absence can belong to an existing object's state; moving that object should not silently replace absence with a destination default.",
+      "scope": "General working question; applicability depends on evidence from the target.",
+      "evidence": [
+        "harness/patterns.md"
+      ],
+      "revision": "Test on the target; revise or reject when a counterexample or new evidence warrants it."
+    },
+    {
+      "id": "HC-REACHABLE-STATE",
+      "kind": "heuristic",
+      "status": "provisional",
+      "authority": "Working proposition requiring evidence for each application",
+      "statement": "After a fix or newly supported state, probe downstream paths that become reachable; unchanged code can expose a latent defect when the domain reaching it changes.",
+      "scope": "General working question; applicability depends on evidence from the target.",
+      "evidence": [
+        "harness/patterns.md"
+      ],
+      "revision": "Test on the target; revise or reject when a counterexample or new evidence warrants it."
+    },
+    {
+      "id": "HC-EXECUTION-CONTEXT",
+      "kind": "heuristic",
+      "status": "provisional",
+      "authority": "Working proposition requiring evidence for each application",
+      "statement": "Give an agent both pinned runtime identity and target-source/import verification, plus actual context evidence; correct source alone does not establish a valid test environment.",
+      "scope": "General working question; applicability depends on evidence from the target.",
+      "evidence": [
+        "harness/packets.mjs"
+      ],
+      "revision": "Test on the target; revise or reject when a counterexample or new evidence warrants it."
+    },
+    {
+      "id": "HC-STAGED-MUTATION",
+      "kind": "heuristic",
+      "status": "provisional",
+      "authority": "Working proposition requiring evidence for each application",
+      "statement": "For a bounded atomic operation, resolve and validate fallible inputs before committing to owned state; stage aliased input reads without copying opaque cell identities.",
+      "scope": "General working question; applicability depends on evidence from the target.",
+      "evidence": [
+        "harness/patterns.md"
+      ],
+      "revision": "Test on the target; revise or reject when a counterexample or new evidence warrants it."
+    },
+    {
+      "id": "HC-MISSING-INVALID",
+      "kind": "heuristic",
+      "status": "provisional",
+      "authority": "Working proposition requiring evidence for each application",
+      "statement": "An absent setting and an explicitly invalid value are different states; declare fallback separately from validation.",
+      "scope": "General working question; applicability depends on evidence from the target.",
+      "evidence": [
+        "harness/patterns.md"
+      ],
+      "revision": "Test on the target; revise or reject when a counterexample or new evidence warrants it."
+    },
+    {
+      "id": "HC-REPRESENTATION-BOUNDARY",
+      "kind": "heuristic",
+      "status": "provisional",
+      "authority": "Working proposition requiring evidence for each application",
+      "statement": "Separate intended semantic formatting, presentation transforms and transport encoding; choose an oracle for the intended layer rather than assuming a typed or display round-trip.",
+      "scope": "General working question; applicability depends on evidence from the target.",
+      "evidence": [
+        "harness/patterns.md"
+      ],
+      "revision": "Test on the target; revise or reject when a counterexample or new evidence warrants it."
+    },
+    {
+      "id": "HC-LESSON-APPLICATION",
+      "kind": "heuristic",
+      "status": "provisional",
+      "authority": "Working proposition requiring evidence for each application",
+      "statement": "Memory recovery and application are separate obligations: bind selected lessons to a target policy and expected evidence before work, then audit use, missed assumptions and repairs.",
+      "scope": "General working question; applicability depends on evidence from the target.",
+      "evidence": [
+        "harness/lessons.mjs"
+      ],
+      "revision": "Test on the target; revise or reject when a counterexample or new evidence warrants it."
+    },
+    {
+      "id": "HC-PRESENTATION-CONTROL",
+      "kind": "heuristic",
+      "status": "provisional",
+      "authority": "Working proposition requiring evidence for each application",
+      "statement": "A presentation comparison should retain identical facts, initial submissions and source-bound outcomes; later discovered requirements and acceptance belong in an explicit supplementary stage.",
+      "scope": "General working question; applicability depends on evidence from the target.",
+      "evidence": [
+        "harness/attention.mjs"
+      ],
+      "revision": "Test on the target; revise or reject when a counterexample or new evidence warrants it."
+    },
+    {
+      "id": "HC-PROBE-DISCRIMINATION",
+      "kind": "heuristic",
+      "status": "provisional",
+      "authority": "Working proposition requiring evidence for each application",
+      "statement": "Observe effective fixture state and choose semantic roles and active competing constraints that make alternative outcomes distinguishable; count of probes or passing configurations is insufficient.",
+      "scope": "General working question; applicability depends on evidence from the target.",
+      "evidence": [
+        "harness/patterns.md"
+      ],
+      "revision": "Test on the target; revise or reject when a counterexample or new evidence warrants it."
+    }
+  ],
+  "revisionProtocol": [
+    "Record new evidence and the smallest implicated claim.",
+    "Distinguish an observation, a product decision, a working heuristic and an unresolved hypothesis.",
+    "Preserve prior versions and the reason for a revision in version history or the target-owned evidence record.",
+    "Update continuation and target-owned context; re-evaluate affected obligations."
+  ],
+  "executionBoundary": "References identify harness policy and implementation, not independent proof that a claim generalizes. Heuristics and hypotheses require target-specific evidence. Structural validation cannot establish truth or semantic application."
+}

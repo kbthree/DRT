@@ -1,0 +1,2 @@
+#!/bin/sh
+node harness/git-guard.mjs check && node harness/git-guard.mjs verify --push

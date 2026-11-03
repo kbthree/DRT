@@ -1,0 +1,27 @@
+{
+  "subject": "fictional-example-only",
+  "decisions": [
+    {
+      "id": "save-preserves-draft",
+      "paths": ["example/save.mjs"],
+      "cues": ["interrupted save", "save failure"],
+      "authority": "Illustrative fictional contract, not evidence about a real product",
+      "decision": "When saving fails, preserve the user's draft so they can retry.",
+      "counterexample": "Clearing the draft after a failed write loses the user's work.",
+      "probe": "Simulate a write failure and check that the draft remains available for retry.",
+      "evidence": "Illustrative example only; establish and cite real evidence for each target.",
+      "related": [{"id": "retry-does-not-duplicate", "when": "the user retries after an uncertain write result"}]
+    },
+    {
+      "id": "retry-does-not-duplicate",
+      "paths": ["example/retry.mjs"],
+      "cues": ["retry", "duplicate save"],
+      "authority": "Illustrative fictional contract, not evidence about a real product",
+      "decision": "A retry after an uncertain result must not create an extra saved item.",
+      "counterexample": "A write succeeds but its response is lost; a blind retry creates a duplicate.",
+      "probe": "Commit a write, hide its response, retry and check the number of saved items.",
+      "evidence": "Illustrative example only; establish and cite real evidence for each target.",
+      "related": []
+    }
+  ]
+}

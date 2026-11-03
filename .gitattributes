@@ -1,0 +1,4 @@
+# Historical evidence hashes depend on exact bytes, including line endings.
+# Preserve existing LF/CRLF bytes in every checkout. Do not mass-normalize.
+* -text
+.githooks/* text eol=lf

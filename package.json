@@ -1,0 +1,19 @@
+{
+  "name": "ness-harness",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node harness/git-guard.mjs test",
+    "harness:test": "node harness/git-guard.mjs test",
+    "harness:audit": "node harness/package-audit.mjs",
+    "harness:check": "node harness/git-guard.mjs check",
+    "harness:verify": "node harness/git-guard.mjs verify --delivery",
+    "harness:repo": "node harness/engage.mjs",
+    "harness:subjects": "node harness/loop.mjs",
+    "git:setup": "node harness/git-guard.mjs setup"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "description": "Ground repository changes, verify evidence, and install a product-owned maintenance loop."
+}

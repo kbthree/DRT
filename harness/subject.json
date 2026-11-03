@@ -1,0 +1,9 @@
+{
+  "id": "ness",
+  "kind": "harness",
+  "contract": "contract.json",
+  "state": "continuation.md",
+  "evidence": ["claims.json", "patterns.md", "handoff.test.mjs"],
+  "workload": {"description": "Maintain the portable harness and verify its two operating modes."},
+  "adapter": {"scope": "Portable package checks", "command": ["npm", "run", "harness:check"]}
+}
